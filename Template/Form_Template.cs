@@ -89,7 +89,7 @@ namespace Template
             string textoSeleccionado;
             int LongitudTexto;
 
-            textoSeleccionado = lst_mantenimiento.SelectedItem.ToString();
+            textoSeleccionado = this.lst_mantenimiento.SelectedItem.ToString();
             LongitudTexto = textoSeleccionado.Length;
 
             txt_codigo.Text = textoSeleccionado.Trim().Substring(0, 5);
