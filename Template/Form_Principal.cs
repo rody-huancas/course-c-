@@ -12,7 +12,7 @@ namespace Template
 {
     public partial class Form_Principal : Form
     {
-        Form_Template Frm_1; 
+        Form_Template Frm_1;
         Form_TrackBar TrackBar_1;
 
         public Form_Principal()
@@ -33,7 +33,7 @@ namespace Template
             {
                 Frm_1.Activate();
             }
-            
+
         }
 
         void Alta_Frm_01(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace Template
 
         private void trackBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (TrackBar_1==null)
+            if (TrackBar_1 == null)
             {
                 TrackBar_1 = new Form_TrackBar();
                 TrackBar_1.MdiParent = this;

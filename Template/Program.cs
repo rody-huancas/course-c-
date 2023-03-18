@@ -16,7 +16,7 @@ namespace Template
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Principal());
+            Application.Run(new Form_Categorias());
         }
     }
 }

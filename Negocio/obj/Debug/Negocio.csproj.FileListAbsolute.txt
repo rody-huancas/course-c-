@@ -1,0 +1,11 @@
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\bin\Debug\Negocio.dll
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\bin\Debug\Datos.dll
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\bin\Debug\Entidades.dll
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\bin\Debug\Datos.pdb
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\bin\Debug\Entidades.pdb
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\obj\Debug\Negocio.dll
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Negocio\obj\Debug\Negocio.pdb

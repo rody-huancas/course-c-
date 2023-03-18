@@ -1,0 +1,6 @@
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Entidades\bin\Debug\Entidades.dll
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Entidades\obj\Debug\Entidades.dll
+C:\Users\Rody\Desktop\C#\Intermedio\Solucion_Template\Entidades\obj\Debug\Entidades.pdb

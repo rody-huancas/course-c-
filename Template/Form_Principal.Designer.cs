@@ -212,6 +212,8 @@
             // m_btn_01
             // 
             this.m_btn_01.AutoSize = false;
+            this.m_btn_01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.m_btn_01.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.m_btn_01.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_01.Image")));
             this.m_btn_01.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.m_btn_01.Name = "m_btn_01";
@@ -224,6 +226,8 @@
             // m_btn_02
             // 
             this.m_btn_02.AutoSize = false;
+            this.m_btn_02.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.m_btn_02.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.m_btn_02.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_02.Image")));
             this.m_btn_02.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.m_btn_02.Name = "m_btn_02";
