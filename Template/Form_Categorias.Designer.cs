@@ -57,6 +57,7 @@
             this.Dgv_Principal.RowTemplate.Height = 24;
             this.Dgv_Principal.Size = new System.Drawing.Size(443, 165);
             this.Dgv_Principal.TabIndex = 0;
+            this.Dgv_Principal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Principal_CellClick);
             // 
             // label1
             // 
@@ -115,6 +116,7 @@
             this.Btn_actualizar.TabIndex = 6;
             this.Btn_actualizar.Text = "Actualizar";
             this.Btn_actualizar.UseVisualStyleBackColor = true;
+            this.Btn_actualizar.Click += new System.EventHandler(this.Btn_actualizar_Click);
             // 
             // Btn_eliminar
             // 
@@ -124,6 +126,7 @@
             this.Btn_eliminar.TabIndex = 7;
             this.Btn_eliminar.Text = "Eliminar";
             this.Btn_eliminar.UseVisualStyleBackColor = true;
+            this.Btn_eliminar.Click += new System.EventHandler(this.Btn_eliminar_Click);
             // 
             // Btn_reporte
             // 

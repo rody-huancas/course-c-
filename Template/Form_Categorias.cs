@@ -19,6 +19,11 @@ namespace Template
             InitializeComponent();
         }
 
+        #region "Mis Variables"
+        int EstadoGuarda = 0;
+        int Ncodigo = 0; //Guardar el código de la fila seleccionada
+        #endregion
+
         #region "Mis Métodos" 
 
         private void Formato_ca()
@@ -66,14 +71,16 @@ namespace Template
             {
                 String Rpta = "";
                 E_Categoria oCa = new E_Categoria();
-                oCa.Codigo_ca = 0;
+                oCa.Codigo_ca = Ncodigo;
                 oCa.Descripcion_ca = Txt_descripcion_ca.Text.Trim();
-                Rpta = N_Categoria.Guardar_ca(1, oCa);
+                Rpta = N_Categoria.Guardar_ca(EstadoGuarda, oCa);
                 if (Rpta.Equals("OK"))
                 {
-                    this.Listado_ca("%");
                     this.Estado(false);
+                    EstadoGuarda = 0;
+                    Ncodigo = 0;
                     Txt_descripcion_ca.Text = "";
+                    this.Listado_ca("%");
                     MessageBox.Show("Datos Guardados Correctamente", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else MessageBox.Show(Rpta, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -87,6 +94,7 @@ namespace Template
 
         private void Btn_nuevo_Click(object sender, EventArgs e)
         {
+            EstadoGuarda = 1; //Nuevo registro
             this.Estado(true);
             Txt_descripcion_ca.Text = "";
         }
@@ -95,6 +103,39 @@ namespace Template
         {
             this.Estado(false);
             Txt_descripcion_ca.Text = "";
+        }
+
+        private void Btn_actualizar_Click(object sender, EventArgs e)
+        {
+            EstadoGuarda = 2; //Actualiza registro
+            this.Estado(true);
+        }
+
+        private void Dgv_Principal_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Ncodigo = Convert.ToInt32(Dgv_Principal.CurrentRow.Cells["codigo_ca"].Value);
+            Txt_descripcion_ca.Text = Convert.ToString(Dgv_Principal.CurrentRow.Cells["descripcion_ca"].Value);
+        }
+
+        private void Btn_eliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult cOpcion;
+            cOpcion = MessageBox.Show("¿Estás seguro de eliminar el registro?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (cOpcion==DialogResult.Yes)
+            {
+                string Rpta = "";
+                Rpta = N_Categoria.Eliminar_ca(Ncodigo);
+                if (Rpta.Equals("OK"))
+                {
+                    Txt_descripcion_ca.Text = "";
+                    this.Listado_ca("%");
+                    Ncodigo = 0;
+                    MessageBox.Show("Datos Eliminados Correctamente", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else MessageBox.Show(Rpta, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            
         }
     }
 }
