@@ -59,6 +59,7 @@ namespace Template
         private void Form_Categorias_Load(object sender, EventArgs e)
         {
             this.Listado_ca("%");
+            //this.reportViewer1.RefreshReport();
         }
 
         private void Btn_guardar_Click(object sender, EventArgs e)
@@ -136,6 +137,18 @@ namespace Template
             }
 
             
+        }
+
+        private void Btn_reporte_Click(object sender, EventArgs e)
+        {
+            Reportes.frm_rpt_Categorias oRpt1 = new Reportes.frm_rpt_Categorias();
+            oRpt1.txt_p1.Text = Txt_buscar.Text;
+            oRpt1.ShowDialog();
+        }
+
+        private void Btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

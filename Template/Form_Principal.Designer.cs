@@ -51,6 +51,8 @@
             this.mibarra = new System.Windows.Forms.ToolStrip();
             this.m_btn_01 = new System.Windows.Forms.ToolStripButton();
             this.m_btn_02 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.categoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.mibarra.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +81,9 @@
             this.tiempoToolStripMenuItem,
             this.numericUpDownToolStripMenuItem,
             this.encuestaToolStripMenuItem,
-            this.dataGridViewToolStripMenuItem});
+            this.dataGridViewToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.categoríasToolStripMenuItem});
             this.datosMaestrosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("datosMaestrosToolStripMenuItem.Image")));
             this.datosMaestrosToolStripMenuItem.Name = "datosMaestrosToolStripMenuItem";
             this.datosMaestrosToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
@@ -237,6 +241,18 @@
             this.m_btn_02.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.m_btn_02.Click += new System.EventHandler(this.m_btn_02_Click);
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(229, 6);
+            // 
+            // categoríasToolStripMenuItem
+            // 
+            this.categoríasToolStripMenuItem.Name = "categoríasToolStripMenuItem";
+            this.categoríasToolStripMenuItem.Size = new System.Drawing.Size(232, 26);
+            this.categoríasToolStripMenuItem.Text = "Categorías";
+            this.categoríasToolStripMenuItem.Click += new System.EventHandler(this.categoríasToolStripMenuItem_Click);
+            // 
             // Form_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -282,5 +298,7 @@
         private System.Windows.Forms.ToolStrip mibarra;
         private System.Windows.Forms.ToolStripButton m_btn_01;
         private System.Windows.Forms.ToolStripButton m_btn_02;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem categoríasToolStripMenuItem;
     }
 }

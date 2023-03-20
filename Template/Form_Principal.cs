@@ -14,6 +14,7 @@ namespace Template
     {
         Form_Template Frm_1;
         Form_TrackBar TrackBar_1;
+        Form_Categorias Frm_ca;
 
         public Form_Principal()
         {
@@ -88,6 +89,25 @@ namespace Template
             {
                 TrackBar_1.Activate();
             }
+        }
+
+        private void categoríasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Frm_ca == null)
+            {
+                Frm_ca = new Form_Categorias();
+                Frm_ca.MdiParent = this;
+                Frm_ca.FormClosed += new FormClosedEventHandler(Alta_Frm_ca);
+                Frm_ca.Show();
+            }
+            else
+            {
+                Frm_ca.Activate();
+            }
+        }
+        void Alta_Frm_ca(object sender, EventArgs e)
+        {
+            Frm_ca = null;
         }
     }
 }
